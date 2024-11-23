@@ -1,0 +1,42 @@
+html {
+    font-size: 62.5%; /* 62.5% de 16px = 10px (1rem = 10px) */
+}
+
+.body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#Superior{
+    background-color: rgb(53, 53, 53);
+}
+
+#Portifolio{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#Portifolio h1{
+    margin-top: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24;
+    color: white;
+}
+
+#Menu menu{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#Menu menu a{
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: white;
+    
+}
