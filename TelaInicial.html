@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="JavaScript/javaScript.js"></script>
-    <title>Página Inicial</title>
-</head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        menu {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 10px;
+            min-width: 380px;
+            max-width: 100%;
+            margin: auto;
+            padding: 1rem; /* Adiciona um espaçamento interno */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um efeito leve */
+        }
+
+        @media (max-width: 480px) {
+            menu {
+                display: flex; /* Corrigido para manter o comportamento flex */
+                flex-direction: column; /* Empilha os itens */
+                align-items: center; /* Centraliza os itens */
+                border-radius: 10px;
+                padding: 1rem; /* Garante espaçamento interno */
+            }
+
+            menu a {
+                margin-bottom: 1rem; /* Adiciona espaçamento entre os links */
+            }
+        }
+
+        menu h1{
+            font-size: 32px;
+        }
+    </style>
+</head>
 <body>
     <menu classe="menu">
         <h1>Portifólio</h1>
@@ -21,9 +52,11 @@
         <a href="Perfil.html">PERFIL</a>
         <a href="https://www.linkedin.com/in/heber-rodrigues-7bb78a86/">LINKEDIN</a>
     </menu>
-    <section class="centro">
-        <div class="descricao">
-            <h3>Hello, I am</h3>
+
+    <div class="row" id="Superior1">
+        <div class="col-sm-7" id="Descricao">
+            <div id="subDescricao">
+                <h3>Hello, I am</h3>
                 <h1>Heber Rodrigues</h1>
                 <h4>Desenvolvedor/Júnior</h4><br>
                 <p>"Sou um desenvolvedor em formação com uma base sólida adquirida no curso de Análise e <br>Desenvolvimento de Sistemas (ADS), 
@@ -35,15 +68,16 @@
                     Estou familiarizado com metodologias ágeis, como Scrum, <br>e tenho
                     prática na análise de requisitos, gestão de projetos e desenvolvimento orientado à <br>
                     qualidade.<br>
-            </p>
+                </p>
+            </div>
         </div>
-        <div id="AroFoto">
+        <div class="col-sm-5" id="AroFoto">
             <div id="containerFoto">
                 <div id="fotoPerfil">
                     <img src="img/image/413913667_1390203281929699_5352380966303942933_n.jpg" alt="Imgagem do Desenvolvedor do site">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 </html>
