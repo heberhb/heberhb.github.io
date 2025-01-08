@@ -70,6 +70,7 @@ section{
     margin-top: 0.15rem;
 }
 
+<<<<<<< Updated upstream
 @media (max-width: 320px) {
     section {
         background-color: rgba(44, 53, 54, 1);
@@ -86,6 +87,8 @@ section{
         font-size:50%;
     }
 }
+=======
+>>>>>>> Stashed changes
 
 @media (max-width: 480px) {
     section {
@@ -104,6 +107,7 @@ section{
     }
 }
 
+<<<<<<< Updated upstream
 @media (max-width: 890px) {
     section {
         background-color: rgba(44, 53, 54, 1);
@@ -126,12 +130,49 @@ section{
 }
 
 .descricao h4{
+=======
+#subDescricao button{
+    background-color: rgba(237, 194, 16, 1);
+    width: 98%;
+    height: 98%;
+}
+
+button{
+    text-decoration: none;
+}
+
+#subDescricao h4{
+>>>>>>> Stashed changes
     color: rgba(237, 194, 16, 1);
     font-size: small;
     font-weight: 6;
 }
 
+<<<<<<< Updated upstream
 .descricao h3{
+=======
+.Botaocurriculo{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    border-radius: 0.5rem;
+    width: 13rem;
+    height: 4rem;
+}
+
+.Botaocurriculo a{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#subDescricao h3{
+    color: rgb(255, 255, 255);
+}
+
+#subDescricao h3{
+>>>>>>> Stashed changes
     color: rgba(237, 194, 16, 1);
 }
 
@@ -170,6 +211,7 @@ section{
 }
 
 #fotoPerfil img{
+<<<<<<< Updated upstream
     width: 100%;
     height: 100%;
 }
@@ -181,3 +223,52 @@ section{
     }
 }
 
+=======
+    width: 35rem;
+    height: 35rem;
+}
+
+.container{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#CentroSul1,#CentroSul2,#CentroSul3{
+    align-items: center;
+    justify-content: center;
+}
+
+#linha1{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#linha2{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#linha3{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.atributos{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 5%;
+    margin: 0.2rem;
+    padding: 1rem;
+}
+>>>>>>> Stashed changes
