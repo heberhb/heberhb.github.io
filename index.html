@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="JavaScript/javaScript.js"></script>
+    <script src="/JavaScript/javaScript.js"></script>
     <title>Página Inicial</title>
 </head>
 
@@ -56,10 +56,11 @@
     </section>
     <div class="container-fluid">
         <div class="row" id="CentroSul1">
-            <div class="col-sm-10" id="linha1">
+            <div class="col-sm-12" id="linha1">
                 <div class="atributos">
                     <img class="img-fluid" src="img/image/java-script.png" alt="Imgagem do Desenvolvedor do site"
-                        width="80px" height="80px">
+                        width="60px"
+                        height="60px">
                     <b>Java-Script</b>
                 </div>
                 <div class="atributos">
@@ -72,56 +73,98 @@
                         height="60px">
                     <b>Html5</b>
                 </div>
+                <div class="atributos">
+                    <img class="img-fluid" src="img/image/css3.jpg" alt="Imgagem do Desenvolvedor do site"
+                        width="60px"
+                        height="60px">
+                    <b>Css3</b>
+                </div>
+                <div class="atributos">
+                    <img class="img-fluid" src="img/image/bootstrap.png" alt="Imgagem do Desenvolvedor do site"
+                        width="60px"
+                        height="60px">
+                    <b>Bootstrap</b>
+                </div>
+                <div class="atributos">
+                    <img class="img-fluid" src="img/image/jquery.png" alt="Imgagem do Desenvolvedor do site"
+                        width="60px"
+                        height="60px">
+                    <b>jquery</b>
+                </div>
+                <div class="atributos">
+                    <img class="img-fluid" src="img/image/mysql-database.png" alt="Imgagem do Desenvolvedor do site"
+                        width="60px"
+                        height="60px">
+                    <b>Mysql-DB</b>
+                </div>
+                <div class="atributos">
+                    <img class="img-fluid" src="img/image/mongodb.png" alt="Imgagem do Desenvolvedor do site"
+                        width="60px"
+                        height="60px">
+                    <b>Mongodb</b>
+                </div>
+                <div class="atributos">
+                    <img class="img-fluid" src="img/image/sql-server.png" alt="Imgagem do Desenvolvedor do site"
+                        width="60px"
+                        height="60px">
+                    <b>Sql-server</b>
+                </div>
+                <div class="atributos">
+                    <img class="img-fluid" src="img/image/uml-logo.jpg" alt="Imgagem do Desenvolvedor do site"
+                        width="60px"
+                        height="60px">
+                    <b>UML</b>
+                </div>
             </div>
         </div>
     </div>
-        <div class="container-fluid">
-            <div class="row" id="CentroSul2">
-                <div class="col-sm-10" id="linha2">
-                    <div class="atributos">
-                        <img class="img-fluid" src="img/image/css3.jpg" alt="Imgagem do Desenvolvedor do site"
-                            width="80px" height="80px">
-                        <b>Css3</b>
-                    </div>
-                    <div class="atributos">
-                        <img class="img-fluid" src="img/image/bootstrap.png" alt="Imgagem do Desenvolvedor do site"
-                            width="80px" height="80px">
-                        <b>Bootstrap</b>
-                    </div>
-                    <div class="atributos">
-                        <img class="img-fluid" src="img/image/jquery.png" alt="Imgagem do Desenvolvedor do site"
-                            width="80px" height="80px">
-                        <b>jquery</b>
-                    </div>
-                    <div class="atributos">
-                        <img class="img-fluid" src="img/image/mysql-database.png" alt="Imgagem do Desenvolvedor do site"
-                            width="80px" height="80px">
-                        <b>Mysql-DB</b>
-                    </div>
+    <div class="col-sm-6" id="linha1">
+        <div class="projeto">
+            <div class="videoDiv">
+                <div id="const">
+                    <video id="screenVideo" autoplay playsinline></video>
+                </div>
+                <div id="btn">
+                        <button class="btn btn-primary" id="startCapture">Iniciar</button>
+                        <button class="btn btn-danger" id="stopCapture" onclick="">Parar</button>
+                </div>
+                <div id="const">
+                    <video id="screenVideo1" autoplay playsinline></video>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row" id="CentroSul3">
-                <div class="col-sm-10" id="linha3">
-                    <div class="atributos">
-                        <img class="img-fluid" src="img/image/mongodb.png" alt="Imgagem do Desenvolvedor do site"
-                            width="80px" height="80px">
-                        <b>Mongodb</b>
-                    </div>
-                    <div class="atributos">
-                        <img class="img-fluid" src="img/image/sql-server.png" alt="Imgagem do Desenvolvedor do site"
-                            width="80px" height="80px">
-                        <b>Sql-server</b>
-                    </div>
-                    <div class="atributos">
-                        <img class="img-fluid" src="img/image/uml-logo.jpg" alt="Imgagem do Desenvolvedor do site"
-                            width="80px" height="80px">
-                        <b>UML</b>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+    <script>
+        document.getElementById('startCapture').addEventListener('click', async () => {
+            try {
+                // Solicita permissão para capturar a tela
+                const mediaStream = await navigator.mediaDevices.getDisplayMedia({
+                    video: true, // Captura apenas o vídeo
+                    audio: false // Sem áudio
+                });
+
+                // Obtém o elemento <video>
+                const videoElement = document.getElementById('screenVideo');
+                // Obtém o elemento <video>
+                const videoElement1 = document.getElementById('screenVideo1');
+
+                // Define o fluxo de mídia no <video>
+                videoElement.srcObject = mediaStream;
+                // Define o fluxo de mídia no <video>
+                videoElement1.srcObject = mediaStream;
+            } catch (err) {
+                console.error('Erro ao capturar a tela:', err);
+            }
+        });
+
+        document.getElementById('screenVideo').addEventListener('click', (event) => {
+            // Para encerrar a captura quando o stream for interrompido
+                    mediaStream.getVideoTracks()[0].addEventListener('ended', () => {
+                    alert('Captura de tela encerrada.');
+            })
+        console.log('Clique detectado no screenVideo');
+    });                 
+    </script>
 </body>
 
 </html>
