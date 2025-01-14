@@ -23,6 +23,11 @@ menu {
 
 #containermenu{
     background-color: rgba(44, 53, 54, 1);
+    position: fixed; /* Fixa o menu na posição desejada */
+    top: 0; /* Posiciona o menu no topo da página */
+    left: 0; /* Alinha o menu à esquerda */
+    width: 100%; /* Faz o menu ocupar toda a largura da página */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
 }
 
 #containerapresentacao{
@@ -143,47 +148,6 @@ section{
     color: rgb(255, 251, 0);
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-}
-
-#subDescricao button{
-    background-color: rgba(237, 194, 16, 1);
-    width: 98%;
-    height: 98%;
-}
-
-button{
-    text-decoration: none;
-}
-
-#subDescricao h4{
-    color: rgba(237, 194, 16, 1);
-    font-size: small;
-    font-weight: 6;
-}
-
-.Botaocurriculo{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffff;
-    border-radius: 0.5rem;
-    border: 2px solid rgba(237, 194, 16, 1);
-    width: 13rem;
-    height: 4rem;
-}
-
-.Botaocurriculo a{
-    color: black;
-    text-decoration: none;
-}
-
-#subDescricao h3{
-    color: rgb(255, 255, 255);
-}
-
-#subDescricao h3{
-    color: rgba(237, 194, 16, 1);
 }
 
 .descricao p{
@@ -319,7 +283,14 @@ button{
     z-index: 2;
 }
 
-.a1 img, .a1 h2, .a1 h4{
+.a1 img, .a1 h2{
+    margin-top: 1rem;
+}
+
+.a1 h4{
+    display: inline-block;
+    background-color: rgba(237, 194, 16, 1);
+    font-family:JejuMyeongjo;
     margin-top: 1rem;
 }
 
