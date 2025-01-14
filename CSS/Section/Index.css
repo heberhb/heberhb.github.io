@@ -301,6 +301,36 @@ button{
     justify-content: space-evenly;
 }
 
+.imgfundo{
+    width:25%;
+    height: 50%;
+    opacity: 30%;
+    position: absolute;
+    z-index: 1;
+}
+
+.a1{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.a1 img, .a1 h2, .a1 h4{
+    margin-top: 1rem;
+}
+
+#habilidadesconteiner{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+
 .atributos{
     display: inline-flex;
     flex-direction: column;
