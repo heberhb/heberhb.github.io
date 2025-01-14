@@ -233,7 +233,7 @@ button{
 }
 
 .marquee-container {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     white-space: nowrap;
     background-color: #f1f1f1;
@@ -256,12 +256,42 @@ button{
     }
   }
 
+  .carousel {
+    overflow: hidden;
+    width: 80%;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.atributos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 #CentroSul1{
+    background-color: aqua;
     display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    margin-left: 5rem;
+    width: 90%;
     height: 100%;
 }
 
@@ -300,6 +330,15 @@ button{
     border: 2px solid rgb(197, 197, 197);
     margin: 3rem;
     border-radius: 4rem;
+}
+
+#videoapirest{
+    margin: 1rem;
+    width:515px; 
+    height:215px;
+    padding: 0.5rem;
+    border: 2px solid rgb(197, 197, 197);
+    margin: 3rem;
 }
 
 #screenVideo, #screenVideo1 {
