@@ -294,6 +294,12 @@ section{
     margin-top: 1rem;
 }
 
+#habilidades{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 #habilidadesconteiner{
     display: inline-flex;
     flex-direction: column;
@@ -365,12 +371,28 @@ button {
     margin-bottom: 2rem;
 }
 
-
-.conteiner{
+.container-pages{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 100%;
+}
+
+.front-pages{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+}
+
+.front img{
+    width: 200px;
+    height: 40rem;
 }
 
 .tituloesubtitulo h1{
