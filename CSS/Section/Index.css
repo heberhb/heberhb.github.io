@@ -372,27 +372,40 @@ button {
 }
 
 .container-pages{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    width: 100%;
-}
-
-.front-pages{
+    background: linear-gradient(rgb(255, 255, 255),rgb(122, 163, 213),rgb(248, 248, 248));
     display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 80%;
-    height: 100%;
+    padding: 15px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 100%; /* Ou um tamanho específico */
+    max-width: 100%;
+    height: auto;
+}
+
+.front{
+    margin: 5px;
 }
 
 .front img{
     width: 200px;
     height: 40rem;
+}
+
+@media (max-width:320px){
+    .front img{
+        width: 80px;
+        height: 10rem;
+    }
+}
+
+@media (max-width:480px){
+    .front img{
+        width: 150px;
+        height: 20rem;
+    }
 }
 
 .tituloesubtitulo h1{
