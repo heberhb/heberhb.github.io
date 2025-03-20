@@ -14,42 +14,14 @@ menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 380px;
     max-width: 70%;
     margin: auto;
     padding: 1rem; /* Adiciona um espaçamento interno */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um efeito leve */
 }
 
-#containermenu{
+.page{
     background-color: rgba(44, 53, 54, 1);
-    position: fixed; /* Fixa o menu na posição desejada */
-    top: 0; /* Posiciona o menu no topo da página */
-    left: 0; /* Alinha o menu à esquerda */
-    width: 100%; /* Faz o menu ocupar toda a largura da página */
-    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
-}
-
-#containerapresentacao{
-    background-color: rgba(44, 53, 54, 1);
-}
-
-.frasedeimpacto h1{
-    font-family: Raleway;
-}
-
-@media (max-width: 480px) {
-    menu {
-        display: flex; /* Corrigido para manter o comportamento flex */
-        flex-direction: column; /* Empilha os itens */
-        align-items: center; /* Centraliza os itens */
-        padding: 1rem; /* Garante espaçamento interno */
-    }
-
-    menu a {
-        font-size: 12px;
-        font-family: 'Courier New', Courier, monospace; /* Adiciona espaçamento entre os links */
-    }
 }
 
 menu h1{
@@ -73,7 +45,30 @@ menu a:hover{
     color: rgb(127, 177, 162); 
 }
 
-section{
+@media (max-width: 480px) {
+    menu {
+        display: flex; /* Corrigido para manter o comportamento flex */
+        flex-direction: column; /* Empilha os itens */
+        align-items: center; /* Centraliza os itens */
+        padding: 1rem; /* Garante espaçamento interno */
+    }
+
+    menu a {
+        font-size: 12px;
+        font-family: 'Courier New', Courier, monospace; /* Adiciona espaçamento entre os links */
+    }
+}
+
+.centro{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.frasedeimpacto h1{
+    font-family: Raleway;
+}
+
+section {
     background-color: rgba(44, 53, 54, 1);
     display: flex;
     flex-direction: row;
@@ -82,111 +77,129 @@ section{
     max-width: 70%;
     height: 50rem;
     margin: auto;
-    padding: 1rem; /* Adiciona um espaçamento interno */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um efeito leve */
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 0.15rem;
 }
 
-@media (max-width: 320px) {
+html {
+    font-size: 50%; /* Unificado para todas as media queries */
+}
+
+@media (max-width: 890px) {
     section {
-        background-color: rgba(44, 53, 54, 1);
-        display: flex; /* Corrigido para manter o comportamento flex */
-        flex-direction: column-reverse; /* Empilha os itens */
-        justify-content: center;
-        align-items: flex-start; /* Centraliza os itens */
-        padding: 1rem; /* Garante espaçamento interno */
+        flex-direction: column-reverse;
+        align-items: center;
         width: 100%;
-        height: 90rem;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    html{
-        font-size:50%;
+        min-height: 70rem; /* Ajustado para permitir melhor adaptação */
     }
 }
 
 @media (max-width: 480px) {
     section {
-        background-color: rgba(44, 53, 54, 1);
-        display: flex; /* Corrigido para manter o comportamento flex */
-        flex-direction: column-reverse; /* Empilha os itens */
-        align-items: center; /* Centraliza os itens */
-        padding: 1rem; /* Garante espaçamento interno */
-        width: 100%;
-        height: 100rem;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    html{
-        font-size:50%;
+        min-height: 90rem;
     }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 320px) {
     section {
-        background-color: rgba(44, 53, 54, 1);
-        display: flex; /* Corrigido para manter o comportamento flex */
-        flex-direction: column-reverse; /* Empilha os itens */
-        align-items: center; /* Centraliza os itens */
-        padding: 1rem; /* Garante espaçamento interno */
-        width: 100%;
-        height: 70rem;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    html{
-        font-size:50%;
+        align-items: flex-start;
+        min-height: 100rem;
     }
 }
 
-.descricao h4, .descricao h3{
+.descricao h4, .descricao h3 {
     display: inline-block;
     padding: 0.2rem;
     background-color: rgba(237, 194, 16, 1);
 }
 
-.descricao b{
+.descricao b {
     color: rgb(255, 251, 0);
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.descricao p{
+.descricao p {
     text-align: start;
     font-size: 13px;
     color: white;
 }
 
-.descricao h1{
+.descricao h1 {
     text-align: start;
     color: white;
 }
 
-#AroFoto{
-    display: inline-flex;
+
+#AroFoto {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 15rem;
+    margin: 0 auto;
 }
 
-#containerFoto{
+#containerFoto {
     border-radius: 50%;
-    width: 26.3rem;
-    height: 26.3rem;
-    border: 7px solid rgba(237, 194, 16, 1);
-}
-
-#fotoPerfil{
-    border-radius: 50%;
+    width: 40rem; /* Aumentado */
+    height: 40rem;
+    border: 5px solid rgba(237, 194, 16, 1); /* Aro afinado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    width: 25rem;
-    height: 25rem;
-    border: 3px solid rgb(0, 0, 0);
 }
 
-#fotoPerfil img{
+#fotoPerfil {
+    border-radius: 50%;
+    width: 38rem; /* Aumentado */
+    height: 38rem;
+    border: 2px solid rgb(0, 0, 0); /* Borda mais fina */
+    overflow: hidden;
+}
+
+#fotoPerfil img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    #containerFoto {
+        width: 35rem;
+        height: 35rem;
+    }
+
+    #fotoPerfil {
+        width: 33rem;
+        height: 33rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #containerFoto {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    #fotoPerfil {
+        width: 28rem;
+        height: 28rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #containerFoto {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    #fotoPerfil {
+        width: 23rem;
+        height: 23rem;
+    }
 }
 
 /* Estilos Responsivos */
@@ -294,18 +307,12 @@ section{
     margin-top: 1rem;
 }
 
-#habilidades{
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-#habilidadesconteiner{
-    display: inline-flex;
-    flex-direction: column;
+.habilidades{
+    margin-top: 20rem;
+    flex-wrap: wrap;
     align-items: start;
-    justify-content: space-evenly;
-    padding: 3rem;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .atributos{
