@@ -37,8 +37,6 @@ html{
 }
 
 .navbar-menu {
-    background-color: rgba(44, 53, 54, 1);
-
     /* Cor de fundo escura */
     display: flex;
     flex-direction: row;

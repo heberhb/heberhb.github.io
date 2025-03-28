@@ -19,14 +19,6 @@ body {
     /* Garante que ocupa toda a altura da tela */
 }
 
-/* Estilos Responsivos */
-@media (max-width: 320px) {
-    html {
-        font-size: 35%;
-        /* Reduz o tamanho base */
-    }
-}
-
 @keyframes scrollText {
     from {
         transform: translateX(100%);
@@ -37,9 +29,17 @@ body {
     }
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .carousel {
     overflow: hidden;
-    width: 100%;
+    width: 70%;
     position: relative;
 }
 
@@ -63,31 +63,6 @@ body {
 
 .atributos b{
     font-size: 8px;
-}
-
-@media (min-width: 1280px){
-    .carousel {
-        overflow: hidden;
-        text-align: center;
-        width: 100%;
-        position: relative;
-    }
-    .atributos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-    }
-    
-    .atributos img{
-        width: 30px;
-        height: 30px;
-    }
-    
-    .atributos b{
-        font-size: 8px;
-    }
 }
 
 @keyframes scroll {

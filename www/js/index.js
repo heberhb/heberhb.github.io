@@ -1,4 +1,4 @@
-app.dialog.alert('Funcionando');
+
 
 $.getScript('js/index.js');
 
