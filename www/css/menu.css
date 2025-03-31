@@ -24,9 +24,10 @@ html{
 }
 
 .menu {
+    color: white;
     background-color: rgba(44, 53, 54, 1);
     /* Cor de fundo escura */
-    display: inline-flex;
+    display: flex;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     /* Adiciona um leve sombreamento */
     flex-direction: row;
@@ -41,11 +42,10 @@ html{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between !important;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     /* Adiciona um leve sombreamento */
     width: 70%;
-    height: 100%;
 }
 
 menu{
@@ -53,19 +53,20 @@ menu{
     flex-direction: row;
     align-items: end;
     justify-content: space-between;
-    width: 90%;
-    height: 50%;
+    width: 60%;
+    height: 70%;
 }
 
 .navbar-menu h1 {
     color: rgba(237, 194, 16, 1);
     font-size: 32px;
     /* Define o tamanho do texto */
+    width: 30%;
 }
 
 /* Estilização dos links dentro do .navbar */
 menu a {
-    color: aliceblue;
+    color: aliceblue !important;
     /* Cor do texto */
     font-weight: bold;
     /* Deixa o texto em negrito */
@@ -85,11 +86,52 @@ menu a {
     margin-left: 5rem;
 }
 
+@media (max-width: 490px){
+
+    menu a {
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .navbar-menu h1 {
+        font-size: 18px;
+    }
+
+    menu{
+        width: 80%;
+        margin: 15px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .navbar-menu {
+        width: 100% !important;
+        margin-left: 15px;
+    }
+}
+
+@media  (max-width: 790px) {
+    menu a {
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .navbar-menu h1 {
+        font-size: 18px;
+    }
+
+    .navbar-menu {
+        width: 70%;
+    }
+}
+
 /* Efeito ao passar o mouse sobre os links do .navbar */
 menu a:hover {
     font-family: Arial, Helvetica, sans-serif;
     /* Mantém a fonte */
-    color: rgb(111, 194, 171);
+    color: rgb(111, 194, 171) !important;
     /* Muda a cor do texto ao passar o mouse */
     transition: 0.3s;
     transform: scale(1.1);

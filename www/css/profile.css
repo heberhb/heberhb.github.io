@@ -1,7 +1,7 @@
 :root{
-    --branco: #ffff;
+    --branco: #ffffff;
     --gelo: #f1f1f1;
-    --vende: #19c463;
+    --verde: #19c463;
     --preto: #2a2a2a;
     --verde-escuro: rgba(44, 53, 54, 1);
 }
@@ -13,7 +13,7 @@
 }
 
 html{
-    font-size: 62%;
+    font-size: 62.5%; /* Ajustado para melhor escalabilidade com rem */
 }
 
 .container-fluid {
@@ -21,7 +21,7 @@ html{
 }
 
 .info{
-    background-color: rgba(44, 53, 54, 1);
+    background-color: var(--verde-escuro);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,7 +41,7 @@ html{
 
 .descricao h4{
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 0.2rem;
     background-color: rgba(237, 194, 16, 1);
 }
@@ -57,7 +57,7 @@ html{
     flex-direction: column;
     text-align: start;
     max-width: 70%;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: white;
 }
 
@@ -70,36 +70,35 @@ html{
     font-weight: 800;
     text-align: start;
     color: white;
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .redes{
-    display: block;
+    display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: end;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
 .containerFoto {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .fotoPerfil {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgb(2, 2, 2); /* Borda mais fina */
+    border: 2px solid rgb(2, 2, 2);
     overflow: hidden;
     border-radius: 50%;
     width: 100%;
-
     height: 100%;
 }
 
 .fotoPerfil img{
-    border-radius: 50%;
+    border-radius: 100%;
     width: 100%;
     height: 100%;
 }
@@ -115,10 +114,10 @@ html{
 }
 
 .AroFoto{
-    border-radius: 50%;
-    border: 2px solid rgba(237, 194, 16, 1); /* Borda mais fina */
-    width: 75%;
-    height: 75%;
+    border-radius: 100%;
+    border: 2px solid rgba(237, 194, 16, 1);
+    width: 200px;
+    height: 200px;
 }
 
 .nome{
@@ -130,12 +129,103 @@ html{
 
 .nome h3 {
     display: inline-block;
-    font-size: 8px;
+    font-size: 1rem;
     padding: 0.2rem;
     background-color: rgba(237, 194, 16, 1);
 }
 
 .nome h1{
     color: white;
-    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 790px){
+
+    .AroFoto{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .nome h3 {
+        font-size: 0.8rem;
+    }
+    
+    .nome h1{
+        font-size: 1rem;
+    }
+
+    .descricao h4{
+        font-size: 1.2rem;
+    }
+    
+    .descricao p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 490px){
+
+    .profile{
+        width: 100%;
+        height: 35vh;
+        margin-left: 15px;
+    }
+
+    .info-redes h1{
+        font-weight: 300;
+        text-align: start;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .AroFoto{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .nome h3 {
+        font-size: 0.6rem;
+    }
+    
+    .nome h1{
+        font-size: 1rem;
+    }
+
+    .descricao h4{
+        font-size: 1rem;
+    }
+    
+    .descricao p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 310px){
+
+    .profile{
+        width: 100%;
+        height: 35vh;
+        margin-left: 15px;
+    }
+
+    .AroFoto{
+        width: 75px;
+        height: 75px;
+    }
+    
+    .nome h3 {
+        font-size: 0.6rem;
+    }
+    
+    .nome h1{
+        font-size: 0.8rem;
+    }
+
+    .descricao h4{
+        font-size: 1rem;
+    }
+    
+    .descricao p {
+        font-size: 0.8rem;
+    }
 }
