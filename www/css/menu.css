@@ -86,31 +86,6 @@ menu a {
     margin-left: 5rem;
 }
 
-@media (max-width: 490px){
-
-    menu a {
-        font-size: 8px;
-        margin: 0;
-    }
-
-    .navbar-menu h1 {
-        font-size: 18px;
-    }
-
-    menu{
-        width: 80%;
-        margin: 15px;
-    }
-
-    .menu {
-        width: 100%;
-    }
-
-    .navbar-menu {
-        width: 100% !important;
-        margin-left: 15px;
-    }
-}
 
 @media  (max-width: 790px) {
     menu a {
@@ -123,7 +98,34 @@ menu a {
     }
 
     .navbar-menu {
-        width: 70%;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 390px){
+
+    menu a {
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .navbar-menu h1 {
+        font-size: 18px;
+    }
+
+    menu{
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .navbar-menu {
+        width: 100% !important;
+        gap: 30px;
     }
 }
 

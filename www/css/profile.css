@@ -106,9 +106,8 @@ html{
 .informacao{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    margin-right: 30px;
     width: 30%;
     height: 100%;
 }
@@ -125,6 +124,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 20%;
 }
 
 .nome h3 {
@@ -139,7 +139,8 @@ html{
     font-size: 1.2rem;
 }
 
-@media (max-width: 790px){
+
+@media (max-width: 1290px){
 
     .AroFoto{
         width: 150px;
@@ -163,12 +164,13 @@ html{
     }
 }
 
-@media (max-width: 490px){
+
+@media (max-width: 790px){
 
     .profile{
         width: 100%;
         height: 35vh;
-        margin-left: 15px;
+        padding: 15px;
     }
 
     .info-redes h1{
@@ -200,12 +202,12 @@ html{
     }
 }
 
-@media (max-width: 310px){
+@media (max-width: 390px){
 
     .profile{
         width: 100%;
         height: 35vh;
-        margin-left: 15px;
+        padding: 5px;
     }
 
     .AroFoto{
@@ -214,18 +216,18 @@ html{
     }
     
     .nome h3 {
-        font-size: 0.6rem;
+        font-size: 0.3rem;
     }
     
     .nome h1{
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     .descricao h4{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     
     .descricao p {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 }
