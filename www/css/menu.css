@@ -1,4 +1,4 @@
-:root{
+:root {
     --branco: #ffff;
     --gelo: #f1f1f1;
     --vende: #19c463;
@@ -6,17 +6,17 @@
     --verde-escuro: rgba(44, 53, 54, 1);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62%;
 }
 
-.page-content{
+.page-content {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -47,7 +47,7 @@ html{
     width: 70%;
 }
 
-menu{
+menu {
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -85,7 +85,7 @@ menu a {
     margin-left: 5rem;
 }
 
-@media  (max-width: 990px) {
+@media (max-width: 990px) {
     menu a {
         font-size: 8px;
         margin: 0;
@@ -102,7 +102,7 @@ menu a {
 }
 
 
-@media  (max-width: 590px) {
+@media (max-width: 590px) {
     menu a {
         font-size: 8px;
         margin: 0;
@@ -119,7 +119,7 @@ menu a {
 }
 
 
-@media (max-width: 390px){
+@media (max-width: 390px) {
 
     menu a {
         font-size: 7px;
@@ -133,7 +133,7 @@ menu a {
 
     .navbar-menu {
         width: 100% !important;
-        
+
     }
 }
 
@@ -144,6 +144,7 @@ menu a:hover {
     color: rgb(111, 194, 171) !important;
     /* Muda a cor do texto ao passar o mouse */
     transition: 0.3s;
+    border-bottom: 1px solid rgba(237, 194, 16, 1);
     transform: scale(1.1);
     /* Aumenta o tamanho do link sem afetar os outros elementos */
 }
