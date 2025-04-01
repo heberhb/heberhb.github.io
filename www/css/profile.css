@@ -36,7 +36,14 @@ html{
     align-items: center;
     justify-content: center;
     width: 70%;
-    height: 45vh;
+    height: 35vh;
+}
+
+#profile_completo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .descricao h4{
@@ -63,7 +70,6 @@ html{
 
 .info-redes{
     width: 70%;
-    margin-left: 6px;
 }
 
 .info-redes h1{
@@ -124,7 +130,6 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20%;
 }
 
 .nome h3 {
@@ -143,8 +148,8 @@ html{
 @media (max-width: 1290px){
 
     .AroFoto{
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
     }
     
     .nome h3 {
@@ -164,12 +169,59 @@ html{
     }
 }
 
+@media (max-width: 990px){
 
-@media (max-width: 790px){
+    .profile{
+        width: 90%;
+        height: 30vh;
+    }
+
+    #profile_completo{
+        gap: 25px;
+    }
+
+    .info{
+        padding: 15px;
+    }
+
+    .info-redes h1{
+        font-weight: 300;
+        text-align: start;
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    .AroFoto{
+        width: 170px;
+        height: 170px;
+    }
+    
+    .nome h3 {
+        font-size: 1.4rem;
+    }
+    
+    .nome h1{
+        font-size: 1.5rem;
+    }
+
+    .descricao h4{
+        font-size: 1rem;
+    }
+    
+    .descricao p {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 590px){
 
     .profile{
         width: 100%;
-        height: 35vh;
+        height: 25vh;
+    }
+
+    .info{
         padding: 15px;
     }
 
@@ -198,16 +250,19 @@ html{
     }
     
     .descricao p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
-@media (max-width: 390px){
+@media (max-width: 320px){
 
     .profile{
         width: 100%;
-        height: 35vh;
-        padding: 5px;
+        height: 25vh;
+    }
+
+    #profile_completo{
+        gap: 12px;
     }
 
     .AroFoto{
