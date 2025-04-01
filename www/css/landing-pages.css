@@ -24,7 +24,7 @@ html {
     justify-content: center;
     margin-bottom: 2rem;
     width: 100%;
-    height: 450px;
+    height: 550px;
 }
 
 swiper-container {
@@ -50,6 +50,10 @@ swiper-slide img {
 }
 
 .projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
@@ -74,7 +78,13 @@ swiper-slide img {
 
 @media (max-width: 590px) {
     .container-swiper {
-        height: 350px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 200px;
     }
 
     swiper-container {
@@ -93,7 +103,7 @@ swiper-slide img {
         justify-content: center;
         margin-bottom: 1rem;
         width: 100%;
-        height: 350px;
+        height: 200px;
     }
 
     swiper-container {

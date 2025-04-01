@@ -18,7 +18,7 @@
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="www/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="www/css/index.css">
-  
+
 </head>
 
 <body>
@@ -512,37 +512,60 @@
                             </div>
                         </div>
                         <div class="container-swiper">
-                            <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
-                            <swiper-slide>
-                                <div class="projeto">
+                            <swiper-container class="mySwiper" space-between="30" pagination="true"
+                                pagination-clickable="true">
 
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="projeto">
-                                    <title>
-                                        VrEmulator
-                                    </title>
-                                    <div class="Descricao">
-                                        Descrição
+                                <swiper-slide>
+                                    <div class="projeto">
+                                        <div class="titulo">
+                                                VrEmulator
+                                        </div>
+                                        
+                                        <div class="videoDiv">
+                                            <div class="const">
+                                                <div class="video-div">
+                                                    <video id="screenVideo" autoplay playsinline></video>
+                                                </div>
+                                                <div id="btn">
+                                                    <button id="startCapture">Iniciar</button>
+                                                    <button id="stopCapture" onclick="">Parar</button>
+                                                </div>
+                                            </div>
+                                            <div class="const">
+                                                <div class="video-div">
+                                                <video id="screenVideo1" autoplay playsinline></video>
+                                            </div>
+                                                <div id="btn">
+                                                    <button id="startCapture">Iniciar</button>
+                                                    <button id="stopCapture" onclick="">Parar</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="projeto">
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="projeto">
+                                        <title>
+                                            VrEmulator
+                                        </title>
 
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="projeto">
-
-                                </div>
-                            </swiper-slide>
-                          </swiper-container>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="projeto">
+                                        <title>
+                                            InfoShipp
+                                        </title>
+                                        <div id="Descricao_InfoShipp">
+                                            InfoShipp
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                            </swiper-container>
                         </div>
-                        
+
                         <footer>
-                            
+
                         </footer>
                     </div>
                 </div>
@@ -551,7 +574,7 @@
     </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    
+    <script src="www/js/vrEmulator.js"></script>
     <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="www/lib/framework7-bundle.min.js"></script>
     <!-- jQuery -->
