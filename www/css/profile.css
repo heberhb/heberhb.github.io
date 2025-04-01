@@ -147,9 +147,14 @@ html{
 
 @media (max-width: 1290px){
 
+    .profile{
+        width: 70%;
+        height: 45vh;
+    }
+
     .AroFoto{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
     
     .nome h3 {
