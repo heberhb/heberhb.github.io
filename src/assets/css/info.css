@@ -1,0 +1,269 @@
+:root {
+  --branco: #ffffff;
+  --gelo: #f1f1f1;
+  --verde: #19c463;
+  --preto: #2a2a2a;
+  --verde-escuro: rgba(44, 53, 54, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* Ajustado para melhor escalabilidade com rem */
+}
+
+.info {
+  background-color: var(--verde-escuro);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 45vh;
+}
+
+#profile_completo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descricao h4 {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 0.2rem;
+  background-color: rgba(237, 194, 16, 1);
+}
+
+.descricao b {
+  color: rgb(255, 251, 0);
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.descricao p {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  max-width: 70%;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.info-redes {
+  width: 70%;
+}
+
+.info-redes h1 {
+  font-weight: 800;
+  text-align: start;
+  color: white;
+  font-size: 1rem;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.containerFoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.fotoPerfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(2, 2, 2);
+  overflow: hidden;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.fotoPerfil img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.informacao {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+.AroFoto {
+  border-radius: 100%;
+  border: 2px solid rgba(237, 194, 16, 1);
+  width: 200px;
+  height: 200px;
+}
+
+.nome {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nome h3 {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.2rem;
+  background-color: rgba(237, 194, 16, 1);
+}
+
+.nome h1 {
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1290px) {
+  .profile {
+    width: 80%;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 1290px) {
+  .profile {
+    width: 85%;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 990px) {
+  .profile {
+    width: 90%;
+    height: 25vh;
+  }
+
+  .info {
+    padding: 15px;
+  }
+
+  .info-redes h1 {
+    font-weight: 300;
+    text-align: start;
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  .AroFoto {
+    width: 120px;
+    height: 120px;
+  }
+
+  .nome h3 {
+    font-size: 1rem;
+  }
+
+  .nome h1 {
+    font-size: 1rem;
+  }
+
+  .descricao h4 {
+    font-size: 1rem;
+  }
+
+  .descricao p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .profile {
+    width: 100%;
+    height: 28vh;
+  }
+
+  .info {
+    padding: 12px 10px 0px 15px;
+  }
+
+  .redes {
+    height: 4.5rem;
+  }
+
+  .info-redes h1 {
+    font-weight: 300;
+    text-align: start;
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .AroFoto {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nome h3 {
+    font-size: 0.6rem;
+  }
+
+  .nome h1 {
+    font-size: 1rem;
+  }
+
+  .descricao h4 {
+    font-size: 1rem;
+  }
+
+  .descricao p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .profile {
+    width: 100%;
+    height: 35vh;
+  }
+
+  .nome {
+    margin: 0;
+  }
+
+  .AroFoto {
+    width: 75px;
+    height: 75px;
+  }
+
+  .nome h3 {
+    font-size: 0.3rem;
+  }
+
+  .nome h1 {
+    font-size: 0.5rem;
+  }
+
+  .descricao h4 {
+    font-size: 0.7rem;
+  }
+
+  .descricao p {
+    font-size: 0.5rem;
+  }
+}
