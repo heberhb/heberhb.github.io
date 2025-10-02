@@ -77,8 +77,8 @@ body {
 
 @media (min-width: 1456px) {
   .carousel {
-    width: 80%;
-    margin-left: 95px;
+    width: 85% !important;
+    margin-left: 80px !important;
     padding: 0;
   }
 }
@@ -86,7 +86,7 @@ body {
 @media (min-width: 1286px) {
   .carousel {
     width: 75%;
-    margin-left: 185px;
+    margin-left: 125px !important;
     padding: 0;
   }
 }

@@ -1,6 +1,7 @@
 import Menu from "./components/Menu.jsx";
 import Info from "./components/info.jsx";
 import Carrocel from "./components/carrocel.jsx";
+import Sobre from "./components/sobre.jsx";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Menu />
       <Info />
       <Carrocel />
+      <Sobre />
     </div>
   );
 };

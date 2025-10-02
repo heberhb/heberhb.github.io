@@ -143,11 +143,11 @@ html {
 @media (min-width: 1290px) {
   .profile {
     width: 80%;
-    height: 55vh;
+    height: 65vh;
   }
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1289px) {
   .profile {
     width: 85%;
     height: 55vh;
